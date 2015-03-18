@@ -14,6 +14,9 @@
 		C07E0D071AB9EC1400B353E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C07E0D061AB9EC1400B353E8 /* Images.xcassets */; };
 		C07E0D0A1AB9EC1400B353E8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C07E0D081AB9EC1400B353E8 /* LaunchScreen.xib */; };
 		C07E0D161AB9EC1500B353E8 /* ViewCallTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C07E0D151AB9EC1500B353E8 /* ViewCallTestTests.m */; };
+		C07E0D371AB9F24000B353E8 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = C07E0D211AB9F24000B353E8 /* JRSwizzle.m */; };
+		C07E0D421AB9F24000B353E8 /* README.markdown in Sources */ = {isa = PBXBuildFile; fileRef = C07E0D361AB9F24000B353E8 /* README.markdown */; };
+		C07E0D5E1AB9F28E00B353E8 /* UIView+Ex.m in Sources */ = {isa = PBXBuildFile; fileRef = C07E0D5D1AB9F28E00B353E8 /* UIView+Ex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		C07E0D0F1AB9EC1400B353E8 /* ViewCallTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewCallTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C07E0D141AB9EC1500B353E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C07E0D151AB9EC1500B353E8 /* ViewCallTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewCallTestTests.m; sourceTree = "<group>"; };
+		C07E0D201AB9F24000B353E8 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		C07E0D211AB9F24000B353E8 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		C07E0D361AB9F24000B353E8 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
+		C07E0D5C1AB9F28E00B353E8 /* UIView+Ex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Ex.h"; sourceTree = "<group>"; };
+		C07E0D5D1AB9F28E00B353E8 /* UIView+Ex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Ex.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 		C07E0CF81AB9EC1400B353E8 /* ViewCallTest */ = {
 			isa = PBXGroup;
 			children = (
+				C07E0D1F1AB9F24000B353E8 /* JRSwizzle */,
 				C07E0CFD1AB9EC1400B353E8 /* AppDelegate.h */,
 				C07E0CFE1AB9EC1400B353E8 /* AppDelegate.m */,
 				C07E0D001AB9EC1400B353E8 /* ViewController.h */,
@@ -89,6 +98,8 @@
 				C07E0D061AB9EC1400B353E8 /* Images.xcassets */,
 				C07E0D081AB9EC1400B353E8 /* LaunchScreen.xib */,
 				C07E0CF91AB9EC1400B353E8 /* Supporting Files */,
+				C07E0D5C1AB9F28E00B353E8 /* UIView+Ex.h */,
+				C07E0D5D1AB9F28E00B353E8 /* UIView+Ex.m */,
 			);
 			path = ViewCallTest;
 			sourceTree = "<group>";
@@ -118,6 +129,16 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		C07E0D1F1AB9F24000B353E8 /* JRSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				C07E0D201AB9F24000B353E8 /* JRSwizzle.h */,
+				C07E0D211AB9F24000B353E8 /* JRSwizzle.m */,
+				C07E0D361AB9F24000B353E8 /* README.markdown */,
+			);
+			path = JRSwizzle;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -219,8 +240,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C07E0D421AB9F24000B353E8 /* README.markdown in Sources */,
+				C07E0D5E1AB9F28E00B353E8 /* UIView+Ex.m in Sources */,
 				C07E0D021AB9EC1400B353E8 /* ViewController.m in Sources */,
 				C07E0CFF1AB9EC1400B353E8 /* AppDelegate.m in Sources */,
+				C07E0D371AB9F24000B353E8 /* JRSwizzle.m in Sources */,
 				C07E0CFC1AB9EC1400B353E8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "JRSwizzle.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Override point for customization after application launch.
+  NSError *error = nil;
+  [UIView jr_swizzleMethod:@selector(addSubview:)
+                withMethod:@selector(myAddSubview:)
+                     error:&error];
+  [UIView jr_swizzleMethod:@selector(didMoveToSuperview)
+                withMethod:@selector(myDidMoveToSuperview)
+                     error:&error];
+  [UIView jr_swizzleMethod:@selector(drawRect:)
+                withMethod:@selector(myDrawRect:)
+                     error:&error];
+  if (error) {
+    NSLog(@"%@", error);
+  }
   return YES;
 }
 
